@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CEON - Plataforma Escolar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CEON</h1>
+        <p>Plataforma Escolar</p>
+    </header>
+
+    <nav class="menu">
+        <a href="#inicio">🏠 Início</a>
+        <a href="#calendario">📅 Calendário</a>
+        <a href="#avisos">📢 Avisos</a>
+        <a href="#tarefas">📝 Tarefas</a>
+        <a href="#materiais">📚 Materiais</a>
+        <a href="#notas">📊 Notas</a>
+        <a href="#cardapio">🍽️ Cardápio</a>
+    </nav>
+
+    <main>
+
+        <div id="mensagem-erro"></div>
+
+        <section id="inicio">
+
+            <h2>Meu Dashboard</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Eventos</h3>
+                    <p id="total-eventos">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Tarefas</h3>
+                    <p id="total-tarefas">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Nota média</h3>
+                    <p id="nota-media">0,0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Faltas</h3>
+                    <p id="total-faltas">0</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="calendario">
+
+            <h2>Calendário</h2>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Evento</th>
+                            <th>Data</th>
+                            <th>Horário</th>
+                            <th>Local</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabela-eventos">
+                        <tr>
+                            <td colspan="4">Carregando...</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <section id="avisos">
+
+            <h2>Mural de Avisos</h2>
+
+            <ul id="lista-avisos">
+                <li>Carregando...</li>
+            </ul>
+
+        </section>
+
+        <section id="tarefas">
+
+            <h2>Minhas Tarefas</h2>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Tarefa</th>
+                            <th>Disciplina</th>
+                            <th>Entrega</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabela-tarefas">
+                        <tr>
+                            <td colspan="3">Carregando...</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <section id="materiais">
+
+            <h2>Materiais de Apoio</h2>
+
+            <ul id="lista-materiais">
+                <li>Carregando...</li>
+            </ul>
+
+        </section>
+
+        <section id="notas">
+
+            <h2>Notas</h2>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Disciplina</th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabela-notas">
+                        <tr>
+                            <td colspan="2">Carregando...</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <section id="cardapio">
+
+            <h2>Cardápio da Semana</h2>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Refeição</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabela-cardapio">
+                        <tr>
+                            <td colspan="2">Carregando...</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        CEON - Plataforma Escolar
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
